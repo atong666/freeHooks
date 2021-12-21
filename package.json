@@ -1,14 +1,35 @@
 {
-  "name": "easy-hooks",
+  "name": "@root/easy-hooks",
   "version": "1.0.0",
-  "description": "常用hooks仓库",
-  "main": "index.js",
+  "description": "easyHooks root",
+  "author": "tonglinghui",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:hooks": "yarn workspace easy-hooks run build",
+    "clean": "lerna clean && rm -rf node_modules",
+    "publish": "lerna publish"
   },
-  "author": "",
-  "license": "ISC",
+  "workspaces": {
+    "packages": [
+      "packages/apps/**",
+      "packages/libs/**"
+    ]
+  },
   "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "lerna": "^4.0.0",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
   }
 }
