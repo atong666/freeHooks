@@ -1,14 +1,14 @@
 {
-  "name": "@root/easy-hooks",
+  "name": "@root/free-hooks",
   "version": "1.0.0",
-  "description": "easyHooks root",
+  "description": "freeHooks root",
   "author": "tonglinghui",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build:hooks": "yarn workspace easy-hooks run build",
+    "build:hooks": "yarn workspace free-hooks run build",
     "clean": "lerna clean && rm -rf node_modules",
-    "publish": "lerna publish"
+    "prepare": "husky install"
   },
   "workspaces": {
     "packages": [
@@ -21,15 +21,24 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "eslint": "^8.5.0",
-    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "lerna": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.3",
+    "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   },
   "dependencies": {
     "react": "^17.0.2"
+  },
+  "lint-staged": {
+    "*": [
+      "eden-lint --fix"
+    ]
   }
 }

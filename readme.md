@@ -1,4 +1,4 @@
-# easyHooks
+# freeHooks
 此仓库记录常用hooks。
 
 ## 使用方式

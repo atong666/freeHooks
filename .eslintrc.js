@@ -1,24 +1,22 @@
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-    },
-    extends: [
-        'plugin:react/recommended',
-        'airbnb',
+  extends: ['react-app', 'prettier'],
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'es5',
+        tabWidth: 2,
+        printWidth: 100,
+        semicolons: true,
+        quoteProps: 'as-needed',
+        jsxSingleQuote: false,
+        bracketSpacing: true,
+        jsxBracketSameLine: true,
+        arrowParens: 'always',
+        endOfLine: 'lf',
+      },
     ],
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        },
-        ecmaVersion: 13,
-        sourceType: 'module',
-    },
-    plugins: [
-        'react',
-        '@typescript-eslint',
-    ],
-    rules: {
-    },
+  },
 };
