@@ -37,8 +37,8 @@
     "react": "^17.0.2"
   },
   "lint-staged": {
-    "*": [
-      "eden-lint --fix"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
     ]
   }
 }
