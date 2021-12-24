@@ -8,7 +8,8 @@
   "scripts": {
     "build:hooks": "yarn workspace free-hooks run build",
     "clean": "lerna clean && rm -rf node_modules",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint packages/**"
   },
   "workspaces": {
     "packages": [

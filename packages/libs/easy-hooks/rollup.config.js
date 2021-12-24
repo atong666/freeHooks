@@ -7,7 +7,7 @@ const fs = require('fs');
 const { resolve } = require('path');
 
 /** 获取绝对路径 */
-const getAbsPath = relativePath => resolve(__dirname, relativePath);
+const getAbsPath = (relativePath) => resolve(__dirname, relativePath);
 
 const getSrcInputs = () => {
   const files = fs.readdirSync('./src');
