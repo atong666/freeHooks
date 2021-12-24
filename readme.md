@@ -2,7 +2,7 @@
 此仓库记录常用hooks。
 
 ## 使用方式
-npm install esayHooks 
+npm install freeHooks 
 
 ## hooks列表
 
