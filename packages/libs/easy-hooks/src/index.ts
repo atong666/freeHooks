@@ -4,8 +4,7 @@ export { useForceUpdate } from './useForceUpdate/index';
 export { abx } from './useLodash/index';
 
 export const mm = useInView;
-
-enum a {
+enum A {
   ad,
 }
 
